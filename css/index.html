@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+
+    <style>
+        /* type of selector */
+
+        /* Element selector */
+        /* p {
+            background-color: rgb(94, 94, 87);
+        } */
+        /* Id selector */
+        /* #mypara {
+            background-color: rgb(51, 10, 26);
+        } */
+        /* Class selector */
+        /* .red {
+            color: rgb(165, 42, 93);
+        } */
+    </style>
+
+</head>
+
+<body>
+    <!-- <div class="import">This is my css </div>
+   <div class="import">This is my css first </div>
+   <div class="import">This is my css second </div>
+   <div class="import">This is my css third</div>
+   <p>This is css example</p>
+   <p id="mypara">This is css example</p> -->
+
+    <div class="nav">
+        <ul class="items">
+            <li class="item"><a href="/this">Home</a></li>
+            <li class="item"><a href="about.html">About</a></li>
+            <li class="item"><a href="/this">Services</a></li>
+            <li class="item"><a href="/this">Our Project</a></li>
+            <li class="item"><a href="/this">Contact US</a></li>
+
+        </ul>
+    </div>
+    <div class="contener">
+        <p><a href="http://w3https://www.w3schools.com/">w3schools</a>The 2006 Securitas depot robbery in
+            Tonbridge, Kent, was the largest ever cash heist in the
+            UK. Seven criminals stole almost £53 million in used and unused Bank of England sterling banknotes. After
+            months of preparation, the gang abducted the manager and his family, then tricked their way inside the
+            building
+            (pictured) and tied up fourteen workers at gunpoint. Kent Police recovered over £19 million; by 2007, 36
+            people had been arrested in relation to the crime. At trial in London, five people were convicted and
+            received long
+            sentences, including the inside man, Emir Hysenaj. Lee Murray, the alleged mastermind of the heist, had fled
+            to Morocco with his friend and accomplice Paul Allen. Murray successfully fought extradition to the UK and
+            was
+            eventually imprisoned for the robbery there instead. Allen was extradited and after a second trial in 2008
+            was jailed. A decade later, £32 million had not been recovered, and several suspects were still on the run.
+        </p>
+    </div>
+    <div class="contener">CSS Another Example</div>
+
+    <h2>Position: Static</h2>
+    <p>An element with position: static; is not positioned in any special way; it is always positioned according to the
+        normal flow of the page:</p>
+    <div class="static">This div element has position: static</div>
+
+    <h2>Position: Relative</h2>
+    <P>An element with position: relative; is positioned relative to its normal position.</P>
+    <div class="relative">This div element has position: relative</div>
+
+    <h2>Position: Fixed</h2>
+    <P>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same
+        place even if the page is scrolled. The top, right, bottom, and left properties are used to position the
+        element.
+    </P>
+    <div class="fixed">This div element has position: fixed</div>
+    <h2>Position: Absolute</h2>
+    <P>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of
+        positioned relative to the viewport, like fixed).</P>
+    <div class="relative">This div element has position: relative
+        <div class="absolute">This div element has position: absolute
+
+        </div>
+    </div>
+    <h2>Position: Sticky</h2>
+    <P>An element with position: sticky; is positioned based on the user's scroll position.</P>
+    <p>A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative
+        until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).</p>
+
+    <div class="sticky">I am sticky!</div>
+    <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.
+    </p>
+    <p>Scroll back up to remove the stickyness.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+        et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+        repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+        et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+        repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+    <h2>Positioning Text In an Image</h2>
+    <h3>Image Text</h3>
+    <P>Add some text to an image in the top left corner:</P>
+    <div class="container"><img src="img/bg2.jpg" alt="bg2" width="500" height="300">
+        <div class="topleft">Top Left</div>
+    </div>
+
+    <h2>CSS Flexbox Layout Module</h2>
+    <p>Before the Flexbox Layout module, there were four layout modes:</p>
+    <ul>
+        <li>Block, for sections in a webpage</li>
+        <li>Inline, for text</li>
+        <li>Table, for two-dimensional table data</li>
+        <li>Positioned, for explicit position of an element</li>
+    </ul>
+    <h2>Flexbox Elements</h2>
+    <p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.
+    </p>
+    <div class="flex-container">
+        <div>Text1</div>
+        <div>Text2</div>
+        <div>Text3</div>
+    </div>
+
+    <h2>The flex-direction Property</h2>
+    <p>The "flex-direction: column;" stacks the flex items vertically (from top to bottom):</p>
+    <div class="flex-container1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h2>The flex-flow Property</h2>
+
+    <p>The flex-flow property is a shorthand property for the flex-direction and the flex-wrap properties.</p>
+
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <h2>The flex-wrap Property</h2>
+
+    <p>The "flex-wrap: nowrap;" specifies that the flex items will not wrap (this is default):</p>
+
+    <div class="flex-container-3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <p>Try resizing the browser window.</p>
+
+    <h2>The justify-content Property</h2>
+
+    <p>The "justify-content: center;" aligns the flex items at the center of the container:</p>
+
+    <div class="flex-container-4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+
+    <h2>CSS Flex Responsive</h2>
+    <!-- <h3>Responsive Flexbox</h3> -->
+    <ul>
+        <li>Laptop and Desktops:</li>
+        <li>Mobile phones and Tablets:</li>
+    </ul>
+    <h2>Responsive Flexbox</h2>
+
+    <p>In this example, we change the percentage of flex to create different layouts for different screen sizes.</p>
+    <p><b>Resize the browser window to see that the direction changes when the
+            screen size is 800px wide or smaller.</b></p>
+    <div class="flex-container">
+        <div class="flex-item-left">1</div>
+        <div class="flex-item-right">2</div>
+    </div>
+
+
+</body>
+
+
+</html>

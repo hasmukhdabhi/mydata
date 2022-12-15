@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <h2>JavaScript if, else, and else if</h2>
+    <p id="demo"></p>
+    <script>
+        // switch statement 
+
+        let day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "sunday";
+                break;
+            case 1:
+                day = "monday";
+                break;
+            case 2:
+                day = "tuesday";
+                break;
+            case 3:
+                day = "wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "friday";
+                break;
+            case 6:
+                day = "saturday";
+                break;
+
+            // default:
+            //     break;
+        }
+        document.getElementById("demo").innerHTML = "Today Is" + " " + day;
+    </script>
+
+    <!-- <script>
+        if (new Date().getHours() < 18) {
+            document.getElementById("demo").innerHTML = "Good Day!"
+        } else {
+
+        }
+    </script> -->
+    
+    <!-- <script>
+        const time = new Date().getHours();
+        let greeting;
+        if (time < 10) {
+            greeting = "Good Day!";
+        } else if (time < 20) {
+            greeting = "Good evening!";
+        } else {
+            greeting = "Good night!";
+        }
+        document.getElementById("demo").innerHTML = greeting;
+    </script> -->
+</body>
+
+</html>
