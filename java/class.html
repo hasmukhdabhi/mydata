@@ -10,8 +10,36 @@
 
 <body>
     <p id="demo"></p>
-
     <script>
+        // for of 
+
+        let text = '{"employees":[' +
+            '{"firstName":"John","lastName":"Doe" },' +
+            '{"firstName":"Anna","lastName":"Smith" },' +
+            '{"firstName":"Peter","lastName":"Jones" }]}';
+
+        const obj = JSON.parse(text).employees;
+
+        for (let data of obj) {
+            document.getElementById("demo").append(data.firstName + " " + data.lastName);
+            document.getElementById("demo").append(document.createElement('br'))
+        }
+
+        // for loop
+        for (let i in obj) {
+            document.getElementById("demo").append(obj[i].firstName + " " + obj[i].lastName);
+            document.getElementById("demo").append(document.createElement('br'));
+        }
+
+    </script>
+
+
+    <!-- <script>
+        import { name, age } from "./person.js";
+         let text = " My name is " + name + ", I am " + ".";
+        document.getElementById("demo").innerHTML = text;
+    </script> -->
+    <!-- <script>
         class car {
             constructor(name, year, model) {
                 this.name = name;
@@ -19,9 +47,9 @@
                 this.model = model;
             }
         }
-        const mycar = new car ("Audi",2022,"Audi A8")
+        const mycar = new car("Audi", 2022, "Audi A8")
         document.getElementById("demo").innerHTML = mycar.name + " , " + mycar.year + " and " + mycar.model 
-    </script>
+    </script> -->
 </body>
 
 </html>
