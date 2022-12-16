@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+
+    <script>
+        class car {
+            constructor(name, year, model) {
+                this.name = name;
+                this.year = year;
+                this.model = model;
+            }
+        }
+        const mycar = new car ("Audi",2022,"Audi A8")
+        document.getElementById("demo").innerHTML = mycar.name + " , " + mycar.year + " and " + mycar.model 
+    </script>
+</body>
+
+</html>
