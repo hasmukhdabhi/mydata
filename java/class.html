@@ -10,7 +10,51 @@
 
 <body>
     <p id="demo"></p>
-    <script>
+    <!-- <script>
+        //JavaScript Iterables
+        function myNumbers() {
+            let n = 0;
+            return {
+                next: function () {
+                    n += 10;
+                    return { value: n, done: false };
+                }
+            };
+        }
+        const n = myNumber();
+        n.next();//10
+        n.next();//20
+        n.next();//30
+        document.getElementById("demo").innerHTML = n.next().value
+    </script> -->
+    <!-- <script>
+        function Person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+
+        Person.prototype.nationality = "English";
+
+        const myFather = new Person("John", "Doe", 50, "blue");
+        document.getElementById("demo").innerHTML =
+            "The nationality of my father is " + myFather.nationality; 
+    </script> -->
+    <!-- <script>
+        function person(first, last, age, eye) {
+            this.firstname = first;
+            this.lastname = last;
+            this.age = age;
+            this.eyecolor = eye;
+            this.nationality = "English";
+
+        }
+        const myfather = new person("john", "Doe", 50, "Blue");
+        const mymother = new person("sally", "rally", 45, "gree");
+        document.getElementById("demo").innerHTML = "The Nationaliy of my father is " + myfather.nationality + ".The nationality of my mother is " + mymother.nationality;
+    </script> -->
+    <!-- <script>
         // for of 
 
         let text = '{"employees":[' +
@@ -30,8 +74,8 @@
             document.getElementById("demo").append(obj[i].firstName + " " + obj[i].lastName);
             document.getElementById("demo").append(document.createElement('br'));
         }
-
-    </script>
+       
+    </script> -->
 
 
     <!-- <script>
