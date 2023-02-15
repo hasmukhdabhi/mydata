@@ -26,6 +26,8 @@ function employee_insert()
                     <td><select name="des">
                             <option value="Developer">Developer</option>
                             <option value="Designer">Designer</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="hr">HR</option>
                         </select>
                     </td>
                 </tr>

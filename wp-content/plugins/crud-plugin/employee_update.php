@@ -36,6 +36,12 @@ function employee_update()
                             <option value="designer" <?php if ($employees[0]->role == "designer") {
                                                             echo "selected";
                                                         } ?>>Designer</option>
+                            <option value="marketing" <?php if ($employees[0]->role == "marketing") {
+                                                            echo "selected";
+                                                        } ?>>marketing</option>
+                            <option value="hr" <?php if ($employees[0]->role == "hr") {
+                                                    echo "selected";
+                                                } ?>>HR</option>
                         </select>
                     </td>
                 </tr>
