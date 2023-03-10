@@ -234,7 +234,7 @@ function cpt_artists_function()
 		'not_found'          => __('No artists found', 'textdomain'),
 		'not_found_in_trash' => __('No artists found in the Trash', 'textdomain'),
 		'parent_item_colon'  => '',
-		'menu_name'          => 'artists'
+		'menu_name'          => 'Artists'
 	);
 	$args = array(
 		'labels'        => $labels,
@@ -251,6 +251,41 @@ function cpt_artists_function()
 	register_post_type('my_artists', $args);
 }
 add_action('init', 'cpt_artists_function');
+
+// Event Schedule new custome post create 
+function cpt_event_schedule_function()
+{
+	$labels = array(
+		'name'               => _x('event', 'post type general name', 'textdomain'),
+		'singular_name'      => _x('event', 'post type singular name', 'textdomain'),
+		'add_new'            => _x('Add New', 'textdomain'),
+		'add_new_item'       => __('Add New event', 'textdomain'),
+		'edit_item'          => __('Edit event', 'textdomain'),
+		'new_item'           => __('New event', 'textdomain'),
+		'all_items'          => __('All event', 'textdomain'),
+		'view_item'          => __('View event', 'textdomain'),
+		'search_items'       => __('Search event', 'textdomain'),
+		'not_found'          => __('No event found', 'textdomain'),
+		'not_found_in_trash' => __('No event found in the Trash', 'textdomain'),
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Event'
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => 'Holds our event and event specific data',
+		'public'        => true,
+		'menu_position' => 5,
+		'publicly_queryable' => true,
+		'query_var' => true,
+		'rewrite' => array('slug' => 'event'),
+		'supports'      => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'custom-fields', 'revisions', 'comments'),
+		'has_archive'   => true,
+		'show_in_rest'       => true
+	);
+	register_post_type('my_event', $args);
+}
+add_action('init', 'cpt_event_schedule_function');
+
 
 
 /* add_theme_support( 'title-tag' ); */
