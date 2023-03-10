@@ -42,19 +42,19 @@ $extra_fields = get_fields();
                         <span class="text-white me-3">Share:</span>
 
                         <li class="social-icon-item">
-                            <a href="#" class="social-icon-link">
+                            <a href="<?php the_field('facebook')?>" class="social-icon-link">
                                 <span class="bi-facebook"></span>
                             </a>
                         </li>
 
                         <li class="social-icon-item">
-                            <a href="#" class="social-icon-link">
+                            <a href="<?php the_field('twitter')?>" class="social-icon-link">
                                 <span class="bi-twitter"></span>
                             </a>
                         </li>
 
                         <li class="social-icon-item">
-                            <a href="#" class="social-icon-link">
+                            <a href="<?php the_field('instagram')?>" class="social-icon-link">
                                 <span class="bi-instagram"></span>
                             </a>
                         </li>
