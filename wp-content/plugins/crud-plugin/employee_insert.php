@@ -26,11 +26,8 @@ function employee_insert()
                     <td><select name="des">
                             <option value="Developer">Developer</option>
                             <option value="Designer">Designer</option>
-<<<<<<< HEAD
-=======
                             <option value="marketing">Marketing</option>
                             <option value="hr">HR</option>
->>>>>>> c8e8f583c0ece295cb11b8ea884fdbf0933ff020
                         </select>
                     </td>
                 </tr>
